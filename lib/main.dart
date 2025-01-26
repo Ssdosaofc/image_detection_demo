@@ -25,7 +25,7 @@ class _HomeState extends State<Home> {
   final ImagePicker picker = ImagePicker();
   File? filePath;
 
-  //TODO - Define functions to upload an image
+  //TODO: Define functions to upload an image
 
   // pickImage() async{
   //   final XFile? image = await picker.pickImage(source: ImageSource.gallery);
@@ -47,6 +47,7 @@ class _HomeState extends State<Home> {
   //   });
   // }
 
+  //TODO: Function to initialize the model
   // Future<void> tfLiteSetup() async{
   //   String? res = await Tflite.loadModel(
   //       model: "assets/disease_model.tflite",
@@ -57,6 +58,7 @@ class _HomeState extends State<Home> {
   //   );
   // }
 
+  //TODO: Function to run the model on the image
   // Future<void> runModel() async{
   //
   //   if(filePath == null) {
@@ -130,6 +132,7 @@ class _HomeState extends State<Home> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          //TODO: Initialize the image widget
           // (filePath== null)?Image(image: AssetImage('assets/blank.png'),height: 256,width: 256,)
           //     :Image.file(filePath!,height: 256,width: 256),
           SizedBox(height: 20,),
@@ -137,16 +140,19 @@ class _HomeState extends State<Home> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ElevatedButton(onPressed: (){
+                //TODO: Upload image from gallery
                 // pickImage();
                 }, child: Text('Select from Gallery')),
               SizedBox(width: 10,),
               ElevatedButton(onPressed: (){
+                //TODO: Upload image from camera
                 // takePhoto();
                 }, child: Text('Take Picture'))
             ],
           ),
           SizedBox(height: 20,),
           ElevatedButton(onPressed: (){
+            //TODO: Predict
             // runModel();
             }, child: Text('Predict')),
           SizedBox(height: 20,),
